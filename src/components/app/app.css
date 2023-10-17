@@ -1,0 +1,10 @@
+.main {
+  height: 100vh;
+  color: rgb(102, 84, 84);
+}
+
+.box {
+  min-width: 800px;
+  max-width: 1600px;
+  margin: 0 auto;
+}

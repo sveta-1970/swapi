@@ -1,0 +1,9 @@
+.page-404{
+  text-align: center;
+  margin-top:10%;
+}
+
+.error-type{
+  color: var(--bs-red);
+  font-style:italic;
+}
