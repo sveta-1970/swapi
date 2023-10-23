@@ -12,7 +12,7 @@ function request() {
   return data;
 }
 */
-
+/*
 async function request(url) {
   const data = await fetch(url)
     .then((value) => {
@@ -27,4 +27,10 @@ async function request(url) {
   return data;
 }
 
-export { request };
+export default {request};
+*/
+
+export const request = async (url) => {
+  const data = await fetch(url);
+  return data.json();
+};
