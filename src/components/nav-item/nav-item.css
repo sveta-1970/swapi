@@ -1,5 +1,6 @@
 .navigation-items {
   cursor: pointer;
+  margin-right: 15px;
   border: 2px solid gray;
   border-radius: 10px;
   padding: 10px 20px;

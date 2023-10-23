@@ -1,6 +1,14 @@
+/*
 .card-page{
   display:flex;
   justify-content: space-between;
   gap:10px;
   flex-wrap: wrap;
+}
+*/
+
+.card-page{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
 }

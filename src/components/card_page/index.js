@@ -14,7 +14,8 @@ class CardPage extends Component {
   componentDidMount() {
     //console.log("componentDidMount");
     console.log(this.props);
-    request(`https://swapi.dev/api/${this.props.url.url}`).then((res) => {
+    request(`https://swapi.dev/api/${this.props.url.url}`)
+      .then((res) => {
       this.setState((state) => {
         return {
           data: res,
@@ -42,7 +43,7 @@ class CardPage extends Component {
             data.results.map((e, i) => {
               return (
                 <ElementCard
-                  key={uniqid}
+                  key={uniqid()}
                   img={`https://starwars-visualguide.com/assets/img/${
                     this.props.url.img
                   }/${i + 1}.jpg`}

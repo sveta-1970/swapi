@@ -11,7 +11,8 @@ class Nav extends Component {
     data: null,
   };
   componentDidMount() {
-    request("https://swapi.dev/api/").then((res) => {
+    request("https://swapi.dev/api/")
+    .then((res) => {
       this.setState((state) => {
         return { data: res };
       });
@@ -39,7 +40,7 @@ function elements(object) {
   */
 
   for (let obj in object) {
-    btn.push(<NavItem name={obj} key={Math.random() * 100 + "l"} />);
+    btn.push(<NavItem name={obj} key={uniqid()} />);
   }
   return btn;
 }
