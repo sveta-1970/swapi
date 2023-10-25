@@ -6,7 +6,7 @@ import "./nav-item.css";
 const NavItem = ({ name }) => {
   return (
     <li className="navigation-items">
-      <NavLink to={"/" + name}>{name}</NavLink>
+      <NavLink to={"/" + name} className="nav-link">{name}</NavLink>
     </li>
   );
 };

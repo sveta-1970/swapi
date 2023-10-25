@@ -16,7 +16,16 @@ const App = () => {
         <Nav></Nav>
         <section>
           <Routes>
-            <Route path="/" element=""></Route>
+            <Route
+              path="/"
+              element={
+                <img
+                  src="https://th.bing.com/th/id/OIP.rFxkH2l2LMlpvwL-AULclwHaEK?w=294&h=180&c=7&r=0&o=5&pid=1.7"
+                  alt="main_image"
+                  className="main_image"
+                />
+              }
+            ></Route>
             <Route
               path="/people"
               element={<CardPage url={{ url: "people", img: "characters" }} />}
